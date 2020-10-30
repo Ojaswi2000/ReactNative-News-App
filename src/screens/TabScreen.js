@@ -15,10 +15,10 @@ export default class TabScreen extends Component {
           <Right />
         </Header>
         <Tabs>
-          <Tab heading="Tab1">
+          <Tab heading="General">
             <Tab1 />
           </Tab>
-          <Tab heading="Tab2">
+          <Tab heading="Business">
             <Tab2 />
           </Tab>
           <Tab heading="Tab3">
