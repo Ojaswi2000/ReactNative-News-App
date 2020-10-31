@@ -21,7 +21,7 @@ export default class TabScreen extends Component {
           <Tab heading="Business">
             <Tab2 />
           </Tab>
-          <Tab heading="Tab3">
+          <Tab heading="Entertainment">
             <Tab3 />
           </Tab>
         </Tabs>
