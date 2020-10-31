@@ -1,6 +1,9 @@
 import React,{Component} from 'react';
 import { Container, Header, Content, List, ListItem, Thumbnail, Text, Left, Body, Right, Button } from 'native-base';
+import TimeAgo from './Time';
+import {View,StyleSheet} from 'react-native';
 export default class DataItem extends Component
+
 {
 
     constructor(props){
@@ -16,7 +19,11 @@ export default class DataItem extends Component
               </Left>
               <Body>
                 <Text>{this.data.title}</Text>
-        <Text note numberOfLines={2}>{this.data.description}</Text>
+                <Text note numberOfLines={2}>{this.data.description}</Text>
+                <View style={{flex:1, flexDirection:'row', marginTop:8, marginLeft:6}}>
+                  <Text note>{this.data.source.name}</Text>
+                  <TimeAgo time={this.data.publishedAt}/>
+                </View>
               </Body>
               <Right>
                 <Button transparent>
