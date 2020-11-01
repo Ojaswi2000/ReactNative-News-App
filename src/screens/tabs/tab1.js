@@ -3,6 +3,7 @@ import { Container, Header, Content, List, ListItem, Thumbnail, Left, Body, Righ
 import {Alert,Text,ActivityIndicator,View} from 'react-native';
 import {getArticles} from '../../service/news';
 import DataItem from '../../component/dataItem';
+import Modal from '../../component/modal';
 export default class ListThumbnailExample extends Component {
 
   constructor(props)
@@ -10,9 +11,29 @@ export default class ListThumbnailExample extends Component {
     super(props);
     this.state={
       isLoading:true,
-      data:null
+      data:null,
+      setModalVisible:false,
+      modalArticleData:{}
     }
   }
+  handleItemDataOnPress=(articleData)=>{
+    this.setState({
+      setModalVisible:true,
+      modalArticleData:articleData
+
+    });
+
+  }
+
+  handleModalDataClose=()=>{
+    this.setState({
+      setModalVisible:false,
+      modalArticleData:{}
+    });
+
+  }
+
+
   componentDidMount() {
     getArticles().then(data=>{
       this.setState({
@@ -37,7 +58,7 @@ export default class ListThumbnailExample extends Component {
       <List
             dataArray={this.state.data}
             renderRow={(item)=>{
-              return <DataItem data={item}/>
+              return <DataItem onPress={this.handleItemDataOnPress} data={item}/>
             }}
           />
     ) 
@@ -47,6 +68,11 @@ export default class ListThumbnailExample extends Component {
         <Content>
           {view}
         </Content>
+        <Modal
+          showModal={this.state.setModalVisible}
+          articleData={this.state.modalArticleData}
+          onClose={this.state.handleModalDataClose}
+        />
       </Container>
     );
   }
