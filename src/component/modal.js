@@ -14,7 +14,12 @@ export default class ModalComponent extends Component
         return this.props.onClose;
     }
     handleShare=()=>{
-
+        const{url,title}=this.props.articleData;
+        message=`${title}\n\nRead More @${url}\n\nShared via React-Native News App`;
+        return Share.share(
+            {title,message,url:message},
+            {dialogTitle:`Share ${title}`}
+        );
     }
     render()
     {
