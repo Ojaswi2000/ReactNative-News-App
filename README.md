@@ -13,10 +13,10 @@ This is a glimpse of the final project that shows the three tabs and by clicking
 <img src="https://user-images.githubusercontent.com/65769340/98412828-9f08ae80-209e-11eb-8043-8dba674b9651.gif" width="400" height="800" />
 <br>
 ### Tools and Frameworks for installation
-* [Node.js](https://nodejs.org/en/download/)
-* [Java JDK 1.3](https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html)
-* [Android Studio](https://developer.android.com/studio)
-* [Visual Studio Code](https://code.visualstudio.com/download)
-* [Yarn Package Manager](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
-* [React Native CLI](https://www.npmjs.com/package/react-native-cli)
+1. [Node.js](https://nodejs.org/en/download/)
+2. [Java JDK 1.3](https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html)
+3. [Android Studio](https://developer.android.com/studio)
+4. [Visual Studio Code](https://code.visualstudio.com/download)
+5. [Yarn Package Manager](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+6. [React Native CLI](https://www.npmjs.com/package/react-native-cli)
 
