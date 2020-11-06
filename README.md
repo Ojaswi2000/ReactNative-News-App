@@ -1,6 +1,9 @@
 # ReactNative-News-App
 This repository contains all necessary files and folders used for building my News App.I have used React Native to build this project.
 <br>
+## Technology used
+The project has been built using [React-Native framework from Javascript library](https://reactnative.dev/)
+<br>
 ### Libraries used 
 1. `[Moment JS]`(https://momentjs.com/) -to handle the time,dates and the formatting to display when the news article was published.
 2. `[Native Base.io]`(https://nativebase.io/) -to handle the UI by using its templates used in **TabScreen.js file**.
