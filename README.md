@@ -27,4 +27,8 @@ This is a glimpse of the final project that shows the three tabs and by clicking
 The Share Functionality has been incorporated in the app to share the news to your contacts via Whatsapp, Email or Instagram.The share icon on the top-right corner as been taken
 from [nativebase.io Icons UI](https://docs.nativebase.io/Components.html#icon-def-headref) and implements sharing the link of the news by fetching the url from the api alongwith the news title.
 This is the preview of the news article.
+<br>
+
+<img src="https://user-images.githubusercontent.com/65769340/98689782-42550e80-2392-11eb-9926-a7a7fd02aa30.gif" width="300" height="600" />
+
 
